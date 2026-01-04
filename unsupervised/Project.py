@@ -56,5 +56,4 @@ plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1],
 plt.title('Clusters of Customers')
 plt.xlabel('Annual Income (Scaled)')
 plt.ylabel('Spending Score (Scaled)')
-plt.legend()
 plt.show()
