@@ -12,7 +12,7 @@ X = np.array([
     [9, 11],
     [8, 2],
     [10, 2],
-    [9, 3]
+    [9, 5]
 ])
 
 # Create KMeans model
