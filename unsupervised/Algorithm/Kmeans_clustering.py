@@ -21,3 +21,8 @@ centers = kmeans.cluster_centers_
 
 print(labels)
 print(centers)
+
+plt.scatter(X[:,0], X[:,1], c=labels)
+plt.scatter(centers[:,0], centers[:,1], marker='X')
+plt.show()
+
