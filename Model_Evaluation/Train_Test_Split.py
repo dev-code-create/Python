@@ -1,6 +1,7 @@
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
 from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix
 
 model = LogisticRegression()
 
@@ -14,3 +15,6 @@ X_train, X_test, y_train, y_test = train_test_split(
 scores = cross_val_score(model,X,y,cv=3)
 print(scores)
 print(scores.mean())
+
+y_pred = model.predict(X_test)
+confusion_matrix(y_test,y_train)
