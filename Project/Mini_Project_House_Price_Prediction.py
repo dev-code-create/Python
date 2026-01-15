@@ -24,4 +24,8 @@ df.info()
 df.describe()
 
 sns.scatterplot(x="Area", y="Price",data =df)
-plt.show()
+#plt.show()
+
+df.isnull().sum()
+
+df = pd.get_dummies(df,columns=["Location"],drop_first=True)
