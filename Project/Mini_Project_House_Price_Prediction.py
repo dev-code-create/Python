@@ -22,3 +22,6 @@ df = pd.DataFrame(data)
 
 df.info()
 df.describe()
+
+sns.scatterplot(x="Area", y="Price",data =df)
+plt.show()
