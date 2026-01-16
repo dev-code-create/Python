@@ -29,3 +29,11 @@ sns.scatterplot(x="Area", y="Price",data =df)
 df.isnull().sum()
 
 df = pd.get_dummies(df,columns=["Location"],drop_first=True)
+print(df)
+
+X = df.drop("Prices" , axis = 1)
+y = df["Prices"]
+
+X_train , X_test , y_train , y_test = train_test_split(
+  X,y,test_size=0.2,random_state=42
+)
