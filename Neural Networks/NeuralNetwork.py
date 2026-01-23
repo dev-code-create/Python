@@ -15,7 +15,7 @@ def sigmoid(x): return 1/(1+np.exp(-x))
 lr = 0.1
 for _ in range(3000):
     # forward
-    z1 = X@W1 + b1
+    z1 = X@W1 + b1  
     a1 = np.maximum(0, z1)     # ReLU
     z2 = a1@W2 + b2
     y_hat = sigmoid(z2)
